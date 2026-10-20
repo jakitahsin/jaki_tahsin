@@ -71,13 +71,13 @@ export default function HomePage() {
               <MagneticButton>
                 <Link
                   href="/preview"
-                  className="group inline-flex items-center space-x-2 rounded-full border border-lime/50 bg-lime/10 px-6 py-3.5 text-xs font-heading font-bold uppercase tracking-wider text-lime transition-all hover:bg-lime hover:text-obsidian shadow-[0_0_20px_rgba(215,255,100,0.15)]"
-                  data-cursor="PLAY VIDEO"
+                  className="group inline-flex items-center space-x-2 rounded-full border border-lime/50 bg-lime/10 px-6 py-3.5 text-xs font-heading font-bold uppercase tracking-wider text-lime transition-all hover:bg-lime hover:text-obsidian shadow-[0_0_20px_rgba(215,255,100,0.2)]"
+                  data-cursor="PLAY PROMO"
                 >
                   <Play className="h-3.5 w-3.5 fill-current" />
-                  <span>Interactive Video Preview</span>
+                  <span>30s Motion Video Promo</span>
                   <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-lime/20 text-lime group-hover:bg-obsidian group-hover:text-lime font-bold">
-                    SFX
+                    4K SFX
                   </span>
                 </Link>
               </MagneticButton>

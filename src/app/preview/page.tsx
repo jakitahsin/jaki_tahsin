@@ -2,12 +2,12 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Sparkles, Film } from "lucide-react";
-import { InteractiveVideoShowreel } from "@/components/InteractiveVideoShowreel";
+import { MotionVideoPromo } from "@/components/MotionVideoPromo";
 
 export const metadata: Metadata = {
-  title: "Official Video Preview & Interactive Showreel — Jaki Tahsin",
+  title: "30-Second 4K Motion Graphics Video Promo — Jaki Tahsin",
   description:
-    "Experience the cinematic interactive portfolio walkthrough of Jaki Tahsin, featuring 3D avatar design, highway billboard campaigns, and dynamic sound effects.",
+    "Pro-level After Effects-style 30-second website preview promo with kinetic typography, 3D perspective camera motion, animated cursor interaction, and 120 BPM sound design.",
 };
 
 export default function VideoPreviewPage() {
@@ -33,7 +33,7 @@ export default function VideoPreviewPage() {
 
       {/* Main Center Video Theater Stage */}
       <main className="mx-auto max-w-6xl w-full my-8">
-        <InteractiveVideoShowreel isStandalonePage={false} />
+        <MotionVideoPromo />
       </main>
 
       {/* Bottom Editorial Caption */}
