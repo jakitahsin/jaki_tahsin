@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowDown, ArrowUpRight, Sparkles, Layers, ShieldCheck, Compass, Eye, CheckCircle2, Play, Film } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Sparkles, Layers, ShieldCheck, Compass, Eye, CheckCircle2 } from "lucide-react";
 import { projectsData } from "@/data/projects";
 import { clientsData } from "@/data/clients";
 import { servicesData } from "@/data/services";
@@ -68,19 +68,7 @@ export default function HomePage() {
                 </Link>
               </MagneticButton>
 
-              <MagneticButton>
-                <Link
-                  href="/preview"
-                  className="group inline-flex items-center space-x-2 rounded-full border border-lime/50 bg-lime/10 px-6 py-3.5 text-xs font-heading font-bold uppercase tracking-wider text-lime transition-all hover:bg-lime hover:text-obsidian shadow-[0_0_20px_rgba(215,255,100,0.2)]"
-                  data-cursor="PLAY PROMO"
-                >
-                  <Play className="h-3.5 w-3.5 fill-current" />
-                  <span>30s Motion Video Promo</span>
-                  <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-lime/20 text-lime group-hover:bg-obsidian group-hover:text-lime font-bold">
-                    4K SFX
-                  </span>
-                </Link>
-              </MagneticButton>
+
             </div>
 
             {/* Editorial Quick Metadata */}
