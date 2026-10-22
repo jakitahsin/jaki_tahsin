@@ -49,7 +49,7 @@ export async function POST(request: Request) {
           mode: "delivered",
           message: "Your inquiry has been successfully sent to jakitahsin@gmail.com.",
         });
-      } catch (err: any) {
+      } catch (err: unknown) {
         console.error("Resend delivery failed:", err);
       }
     }

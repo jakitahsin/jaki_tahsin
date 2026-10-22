@@ -22,8 +22,8 @@ const config: Config = {
         muted: "#A3A3A3",
       },
       fontFamily: {
-        sans: ["'Inter'", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "Roboto", "sans-serif"],
-        heading: ["'Space Grotesk'", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "sans-serif"],
+        sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "Roboto", "sans-serif"],
+        heading: ["var(--font-space-grotesk)", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "sans-serif"],
       },
       animation: {
         "marquee-slow": "marquee 35s linear infinite",
