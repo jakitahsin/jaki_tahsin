@@ -96,6 +96,28 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
           <p className="mt-6 text-lg sm:text-xl text-muted leading-relaxed max-w-3xl">
             {project.desc}
           </p>
+
+          {project.showcaseUrl && (
+            <div className="mt-8 flex flex-wrap items-center justify-between gap-4 p-5 rounded-xl border border-lime/30 bg-lime/5">
+              <div className="max-w-xl">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-lime block">
+                  ✦ Interactive Brand Showcase Available
+                </span>
+                <p className="text-xs sm:text-sm text-muted mt-1">
+                  Explore the dedicated full-screen presentation experience featuring interactive mascot explorers, dynamic color palette copy tools, and high-res lightbox views.
+                </p>
+              </div>
+              <a
+                href={project.showcaseUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 rounded-full bg-lime px-5 py-2.5 text-xs font-heading font-bold uppercase tracking-wider text-obsidian shadow-md hover:bg-lime-hover transition-transform hover:-translate-y-0.5 shrink-0"
+              >
+                <span>Open Showcase</span>
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
+          )}
         </header>
 
         {/* Project Metadata Matrix */}
