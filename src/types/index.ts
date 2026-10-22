@@ -16,7 +16,6 @@ export interface Project {
   featured: boolean;
   published: boolean;
   tags?: string[];
-  showcaseUrl?: string;
 }
 
 export interface Client {

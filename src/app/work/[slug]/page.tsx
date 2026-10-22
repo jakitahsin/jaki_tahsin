@@ -5,7 +5,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { projectsData } from "@/data/projects";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Share2, Layers } from "lucide-react";
-import { PetCarnivalShowcase } from "@/components/PetCarnivalShowcase";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -57,10 +56,6 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
   const prevProject =
     projectsData[(currentIndex - 1 + projectsData.length) % projectsData.length];
   const nextProject = projectsData[(currentIndex + 1) % projectsData.length];
-
-  if (slug === "1st-pet-carnival-ducsu") {
-    return <PetCarnivalShowcase prevProject={prevProject} nextProject={nextProject} />;
-  }
 
   return (
     <article className="pt-32 pb-24 px-6 sm:px-8">
