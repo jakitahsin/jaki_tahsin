@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowDown, ArrowUpRight, Sparkles, Layers, ShieldCheck, Compass, Eye, CheckCircle2 } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Sparkles, Layers, ShieldCheck, Compass, Eye, CheckCircle2, Gamepad2 } from "lucide-react";
 import { projectsData } from "@/data/projects";
 import { clientsData } from "@/data/clients";
 import { servicesData } from "@/data/services";
@@ -68,7 +68,19 @@ export default function HomePage() {
                 </Link>
               </MagneticButton>
 
-
+              <MagneticButton>
+                <a
+                  href="#color-game"
+                  className="group inline-flex items-center space-x-2 rounded-full border border-lime/50 bg-lime/10 px-5 py-3.5 text-xs font-heading font-bold uppercase tracking-wider text-lime transition-all hover:bg-lime hover:text-obsidian shadow-[0_0_20px_rgba(215,255,100,0.18)]"
+                  data-cursor="PLAY GAME"
+                >
+                  <Gamepad2 className="h-4 w-4 text-lime group-hover:text-obsidian group-hover:rotate-12 transition-transform" />
+                  <span>Play Color Game</span>
+                  <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-lime/20 text-lime group-hover:bg-obsidian group-hover:text-lime font-bold">
+                    GAME
+                  </span>
+                </a>
+              </MagneticButton>
             </div>
 
             {/* Editorial Quick Metadata */}
@@ -89,8 +101,18 @@ export default function HomePage() {
           </div>
 
           {/* Right Column: Hero 3D Avatar with Float & Toggle */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+          <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
             <HeroAvatar />
+            {/* Quick interactive playground launcher */}
+            <a
+              href="#color-game"
+              className="group mt-4 inline-flex items-center space-x-2.5 rounded-full border border-graphite bg-charcoal/80 px-4 py-2 text-xs font-mono text-muted hover:border-lime/60 hover:text-warm transition-all backdrop-blur-md shadow-lg"
+              data-cursor="PLAY GAME"
+            >
+              <span className="flex h-2 w-2 rounded-full bg-lime animate-ping" />
+              <span>Test Your Eye: Play Color Match Game</span>
+              <ArrowUpRight className="h-3.5 w-3.5 text-lime transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
           </div>
         </div>
 
@@ -264,7 +286,7 @@ export default function HomePage() {
       </section>
 
       {/* THE CREATIVE PLAYGROUND — MINI-GAME & PALETTE LAB */}
-      <section className="py-24 px-6 sm:px-8 border-b border-graphite bg-obsidian relative">
+      <section id="color-game" className="scroll-mt-20 py-24 px-6 sm:px-8 border-b border-graphite bg-obsidian relative">
         <div className="mx-auto max-w-7xl">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-xs font-mono uppercase tracking-widest text-lime mb-2 inline-block font-bold">

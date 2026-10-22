@@ -10,6 +10,7 @@ import { EasterEggModal } from "./EasterEgg";
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/work", label: "Work" },
+  { href: "/#color-game", label: "Color Game" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
