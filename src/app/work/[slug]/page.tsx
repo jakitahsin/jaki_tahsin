@@ -57,6 +57,18 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
     projectsData[(currentIndex - 1 + projectsData.length) % projectsData.length];
   const nextProject = projectsData[(currentIndex + 1) % projectsData.length];
 
+  if (slug === "1st-pet-carnival") {
+    return (
+      <div className="fixed inset-0 z-40 bg-[#FFF7E8] w-full h-full overflow-hidden">
+        <iframe
+          src="/work/1st-pet-carnival/index.html"
+          className="w-full h-full border-0"
+          title="1st Pet Carnival — Brand Identity Case Study"
+        />
+      </div>
+    );
+  }
+
   return (
     <article className="pt-32 pb-24 px-6 sm:px-8">
       <div className="mx-auto max-w-5xl">

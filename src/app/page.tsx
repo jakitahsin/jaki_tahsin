@@ -5,6 +5,7 @@ import { projectsData } from "@/data/projects";
 import { clientsData } from "@/data/clients";
 import { servicesData } from "@/data/services";
 import { ProjectCard } from "@/components/ProjectCard";
+import { HomeSelectedWorks } from "@/components/HomeSelectedWorks";
 import { Marquee } from "@/components/Marquee";
 import { MagneticButton } from "@/components/MagneticButton";
 import { PalettePlayground } from "@/components/PalettePlayground";
@@ -169,26 +170,8 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Varied Editorial Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {featuredProjects.map((project, idx) => (
-              <ProjectCard
-                key={project.id}
-                project={project}
-                featured={idx === 0}
-              />
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Link
-              href="/work"
-              className="inline-flex items-center space-x-2 rounded-full border border-graphite bg-charcoal px-8 py-4 text-xs font-heading font-bold uppercase tracking-wider text-warm hover:border-lime hover:text-lime transition-all"
-            >
-              <span>Explore Complete Gallery</span>
-              <ArrowUpRight className="h-4 w-4" />
-            </Link>
-          </div>
+          {/* Interactive Compact Works Showcase */}
+          <HomeSelectedWorks />
         </div>
       </section>
 
