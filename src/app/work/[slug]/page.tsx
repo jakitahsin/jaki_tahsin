@@ -59,7 +59,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
   const nextProject = projectsData[(currentIndex + 1) % projectsData.length];
 
   if (slug === "1st-pet-carnival") {
-    return <PetCarnivalShowcase />;
+    return <PetCarnivalShowcase prevProject={prevProject} nextProject={nextProject} />;
   }
 
   return (
