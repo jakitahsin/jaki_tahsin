@@ -2,9 +2,15 @@
 
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ArrowUp, Mail, ExternalLink } from "lucide-react";
 
 export function Footer() {
+  const pathname = usePathname();
+  if (pathname === "/work/1st-pet-carnival") {
+    return null;
+  }
+
   const currentYear = new Date().getFullYear();
 
   const scrollToTop = () => {

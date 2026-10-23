@@ -5,6 +5,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { projectsData } from "@/data/projects";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Share2, Layers } from "lucide-react";
+import { PetCarnivalShowcase } from "@/components/PetCarnivalShowcase";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -58,15 +59,7 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
   const nextProject = projectsData[(currentIndex + 1) % projectsData.length];
 
   if (slug === "1st-pet-carnival") {
-    return (
-      <div className="fixed inset-0 z-40 bg-[#FFF7E8] w-full h-full overflow-hidden">
-        <iframe
-          src="/work/1st-pet-carnival/index.html"
-          className="w-full h-full border-0"
-          title="1st Pet Carnival — Brand Identity Case Study"
-        />
-      </div>
-    );
+    return <PetCarnivalShowcase />;
   }
 
   return (

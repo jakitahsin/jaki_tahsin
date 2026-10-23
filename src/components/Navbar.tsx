@@ -18,6 +18,10 @@ const NAV_LINKS = [
 
 export function Navbar() {
   const pathname = usePathname();
+  if (pathname === "/work/1st-pet-carnival") {
+    return null;
+  }
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [easterEggClicks, setEasterEggClicks] = useState(0);
